@@ -100,9 +100,6 @@ button {
     padding: 10px;
 }
 
-.main-content {
-    background-color: lightgrey;
-}
 
 a {
     color: white;
@@ -120,4 +117,52 @@ ul {
     flex-direction: column;
     gap: 12px;
     font-weight: 600;
+}
+
+.main-content {
+    background-color: lightgrey;
+    display: grid;
+    grid-template-columns: 4fr 4fr 2fr;
+    
+}
+
+.left-content {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 24px;
+}
+
+.card {
+    text-align: left;
+    background-color: white;
+    width: 300px;
+    height: 180px;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.title {
+    font-weight: 700;
+}
+
+.icons {
+    padding-top: 70px;
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+}
+
+.icons>img {
+    width: 20px;
+}
+
+.announcement {
+    background-color: white;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+.announcement>.title {
+    font-size: 14px;
 }
