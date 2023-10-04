@@ -122,7 +122,7 @@ ul {
 .main-content {
     background-color: lightgrey;
     display: grid;
-    grid-template-columns: 4fr 4fr 2fr;
+    grid-template-columns: 2fr 2fr 1fr;
     
 }
 
@@ -133,6 +133,10 @@ ul {
     margin: 24px;
 }
 
+.right-content {
+    margin: 24px;
+}
+
 .card {
     text-align: left;
     background-color: white;
@@ -140,6 +144,7 @@ ul {
     height: 180px;
     padding: 20px 10px;
     border-radius: 10px;
+    border-left: 10px solid yellow;
 }
 
 .title {
@@ -165,4 +170,22 @@ ul {
 
 .announcement>.title {
     font-size: 14px;
+}
+
+.trending-sub {
+    display: flex;
+    gap: 8px;
+}
+
+.trending {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+div>a {
+    color: black;
 }
